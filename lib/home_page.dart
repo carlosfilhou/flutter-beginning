@@ -4,17 +4,15 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.blueGrey[300],
       appBar: AppBar(
-        title: Text('MEU APLICATIVO'),
+        backgroundColor: Colors.blueGrey[800],
+        title: Text('NETFLIX'),
       ),
       body: Center(
-        child: Text('Hello World!'),
+        child: Image.network(
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaM2U6d2cHGbmakeXBFuYFi2aVnyfQJvXf9Q&usqp=CAU'),
       ),
-      floatingActionButton: FloatingActionButton(
-          child: Icon(Icons.add),
-          onPressed: () {
-            print('clicou');
-          }),
     );
   }
 }
