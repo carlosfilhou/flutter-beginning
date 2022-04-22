@@ -20,7 +20,7 @@ class _MyAppState extends State<MyApp> {
     return Center(
       child: GestureDetector(
         onTap: () {
-          print('clicou');
+          print('clicou!');
 
           // ESSE AQUI É O COMANDO QUE IRÁ ALTERAR NA TELA.
           setState(() {
